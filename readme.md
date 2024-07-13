@@ -32,7 +32,7 @@ npm i
 Run Migrations file to create a tables.
 
 ```bash
-npm run dev
+npx sequelize-cli db:migrate
 ```
 
 ## Run Project
