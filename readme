@@ -1,0 +1,58 @@
+steps :
+
+install express, sequelize (ORM) to connect db and perform operations, dotenv to access env variables
+
+- npm install express sequelize dotenv
+
+2 Ways to create models in sequelize
+
+1. by extending Model class provided by sequelize.
+   example:
+
+const { Model } = require("sequelize");
+const sequelize = require("../config/db");
+
+class Category extends Model {}
+
+Category.init({
+id{
+constraints...
+},
+name {
+constraints...
+}  
+},{
+other options like,
+
+sequelize,
+timestamps: true
+})
+
+module.exports = Category
+
+2. by using define method on sequelize database instance
+   example:
+
+const sequelize = require("../config/db");
+
+const Cateogory = sequelize.define('Category', {
+id: { constraints },
+name: { constraints }
+},{
+timestamps: true  
+})
+
+module.exports = Category
+
+create resources using sequelize-cli
+
+- first of install sequelize-cli
+
+  -> npm i sequelize-cli
+  -> npm i -g sequelize-cli # globally
+
+# generate assets (folders) like, config/config.json, models, seeders, migrations folders
+
+-> npx sequelize-cli init
+
+#
