@@ -27,6 +27,14 @@ Install Dependencies
 npm i
 ```
 
+## Run Migration
+
+Run Migrations file to create a tables.
+
+```bash
+npm run dev
+```
+
 ## Run Project
 
 Run Project
