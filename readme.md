@@ -10,3 +10,27 @@ Clone the repository:
 git clone https://github.com/naeem123650/node-express-sequelize-ecommerce-app.git
 cd node-express-sequelize-ecommerce-app
 ```
+
+## Environment Variables
+
+Each service has an .env.example file that contains the required environment variables. Copy this file to .env and adjust the values as needed.
+
+```bash
+cp .env.example .env
+```
+
+## Install Dependencies
+
+Install Dependencies
+
+```bash
+npm i
+```
+
+## Run Project
+
+Run Project
+
+```bash
+npm run dev
+```
