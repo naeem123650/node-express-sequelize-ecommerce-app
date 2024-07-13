@@ -1,3 +1,7 @@
+## Stack
+
+Nodejs, Express, Sequelize, Mysql
+
 ## Installation
 
 Clone the repository:
